@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace DIO.Bank
 {
-	class Program
+	public class Program
 	{
-		static List<Conta> listContas = new List<Conta>();
-		static void Main(string[] args)
+		private static List<Conta> listContas = new List<Conta>();
+		private static void Main(string[] args)
 		{
-			string opcaoUsuario = ObterOpcaoUsuario();
+			var opcaoUsuario = ObterOpcaoUsuario();
 
 			while (opcaoUsuario.ToUpper() != "X")
 			{
